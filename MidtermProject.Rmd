@@ -1,0 +1,38 @@
+---
+title: "Midterm Project"
+author: "Ryan Pugh"
+date: "October 12, 2017"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Load required packages
+suppressPackageStartupMessages(library(tidyverse, quietly = TRUE))
+suppressPackageStartupMessages(library(lubridate, quietly = TRUE))
+```
+
+1. At least do two sets of exploratory analyses (ask two questions) that look at: 
+   * variations among observations
+   * covariations between variables 
+2. At least include three graphics;
+3. Involve some data cleaning and data transformation;
+4. Try to seek in-depth understanding
+
+##Data Set: 
+
+##Question 1
+
+```{r}
+
+```
+
+##Question 2
+
+```{r}
+
+```
+
+```{r}
+
+```
