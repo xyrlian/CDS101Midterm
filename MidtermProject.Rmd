@@ -19,15 +19,27 @@ suppressPackageStartupMessages(library(lubridate, quietly = TRUE))
 3. Involve some data cleaning and data transformation;
 4. Try to seek in-depth understanding
 
-##Data Set: 
+##Data Set: Young People
+Variables to select: Music preferences, Movie preferences, Demographics
+https://www.kaggle.com/miroslavsabo/young-people-survey
+
+####Data Transformation:
+
+```{r}
+
+```
 
 ##Question 1
+
+Are there differences in music preferences between left handed people and right handed people?
 
 ```{r}
 
 ```
 
 ##Question 2
+
+Are there any connections between music and movie preferences?
 
 ```{r}
 
