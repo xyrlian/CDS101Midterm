@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 # Load required packages
 suppressPackageStartupMessages(library(tidyverse, quietly = TRUE))
 suppressPackageStartupMessages(library(lubridate, quietly = TRUE))
+suppressPackageStartupMessages(library(tidyr, quietly = TRUE))
+youthdata<-read_csv("responses.csv")
 ```
 
 1. At least do two sets of exploratory analyses (ask two questions) that look at: 
@@ -26,7 +28,11 @@ https://www.kaggle.com/miroslavsabo/young-people-survey
 ####Data Transformation:
 
 ```{r}
-
+youthdata2<-select(youthdata, Music:Action, Age:`Left - right handed`, -`Only child`)
+youthdata2<-gather(data = youthdata2, key = "MusicGenre", value = "MusicGenreScore", Dance:Opera)
+youthdata2<-gather(data = youthdata2, key = "MovieGenre", value = "MovieGenreScore", Horror:Action)
+youthdata2<-select(youthdata2, MusicScore=Music, MusicGenre, MusicGenreScore, MoviesScore=Movies, MovieGenre, MovieGenreScore, Age, Height, Weight, Gender, DominateHand=`Left - right handed`)
+youthdata2
 ```
 
 ##Question 1
