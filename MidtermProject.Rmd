@@ -60,35 +60,28 @@ In are tidy dataset there are 188870 rows, and 11 columns. 7 are numerical, 4 ar
 
 ## 2. Data Analysis 
 
-May describe data tranformation you carried out before any of your analysis, and include R code.
+Each question has its own data transformation done within the visualization code block. General transformation was completed in the Importing and Cleaning phase. Relevant code can be viewed above.
 
 
 ### Question 1: Are there differences in music preferences between left handed people and right handed people?
 
+#### 1a: Genre Preference comparison for Dominate Hand
+
 ```{r}
+filter(youthdata2, MusicGenreScore == 5) %>% 
+  ggplot() +
+         geom_bar(mapping = aes(x = DominateHand, fill = MusicGenre), position = "fill")
 
 ```
 
-Describe data transformation specific for this question, and include R code;
+For this graph, we wanted to filter all the music scores (how high people rated the music) to 5. This is the highest score, so we assume that the people who scored a genre with a 5 consider that their favorite genre.
 
-Describe how you address this specific question, and include R code;
+After filtering the score, we wanted to see if there was a relationship between dominate hand and favorite music. To view this more neatly, we put the dominate hand variable on the x axis and the number of people in the survey on the y axis. Next, we organized the the music genre by color so we could see the split between how many left-handers liked a certain genre of music vs. how many right-handers liked a certain genre of music.
 
-Write your answer to the quetsion based on the analysis; may look at and cite addional sources to increase your understanding about the question.
-
-
-**Note: If the question contains multiple parts (small questions), you may lable them as 1a, 1b,etc. as follows:**
+According to the graph, a larger number of left-handers preferred Pop over right-handers, but a larger number of right-handers preferred Rock over left-handers. Overall, there is not much of a discrepensy between dominate hand and preferred music. People of all types of hands like all the same types of music.
 
 
-#### 1a: XXX
-
-Describe data transformation specific for this question, and include R code;
-
-Describe how you address this specific question, and include R code;
-
-Write your answer to the quetsion based on the analysis; may look at and cite addional sources to increase your understanding about the question.
-
-
-#### 1b: XXX
+#### 1b: Dominate hand and general score of music enjoyment
 
 ...
 
