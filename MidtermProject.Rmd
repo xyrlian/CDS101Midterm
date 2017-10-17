@@ -1,7 +1,7 @@
 ---
-title: "Midterm Project"
-author: "Ryan Pugh"
-date: "October 12, 2017"
+title: "An Explorotory Analysis of Young People"
+author: "xxx"
+date: "October 17, 2017"
 output: word_document
 ---
 
@@ -14,18 +14,39 @@ suppressPackageStartupMessages(library(tidyr, quietly = TRUE))
 youthdata<-read_csv("responses.csv")
 ```
 
-1. At least do two sets of exploratory analyses (ask two questions) that look at: 
-   * variations among observations
-   * covariations between variables 
-2. At least include three graphics;
-3. Involve some data cleaning and data transformation;
-4. Try to seek in-depth understanding
+## Introduction
 
-##Data Set: Young People
-Variables to select: Music preferences, Movie preferences, Demographics
-https://www.kaggle.com/miroslavsabo/young-people-survey
+In 2013, students of the Statistics class at FSEV UK were asked to invite their friends to participate in this survey.
 
-####Data Transformation:
+The data file (responses.csv) consists of 1010 rows and 150 columns (139 integer and 11 categorical).
+For convenience, the original variable names were shortened in the data file. See the columns.csv file if you want to match the data with the original names.
+The data contain missing values.
+The survey was presented to participants in both electronic and written form.
+The original questionnaire was in Slovak language and was later translated into English.
+All participants were of Slovakian nationality, aged between 15-30.
+
+The variables can be split into the following groups:
+*Music preferences (19 items)
+*Movie preferences (12 items)
+*Hobbies & interests (32 items)
+*Phobias (10 items)
+*Health habits (3 items)
+*Personality traits, views on life, & opinions (57 items)
+*Spending habits (7 items)
+*Demographics (10 items)
+
+Write about the general purpose of this analysis, and list the questions you intend to address. For example:
+
+This analysis is designed to show .... More specifically, the data analysis will answer the following questions:
+
+1.  Are there differences in music preferences between left handed people and right handed people?
+2.  XXX
+3.  XXX
+
+...
+
+
+## 1. Data Import and Cleaning
 
 ```{r}
 youthdata2<-select(youthdata, Music:Action, Age:`Left - right handed`, -`Only child`)
@@ -35,22 +56,65 @@ youthdata2<-select(youthdata2, MusicScore=Music, MusicGenre, MusicGenreScore, Mo
 youthdata2
 ```
 
-##Question 1
+Describe how you imported the data to tidyverse, what problems you found with the data, what steps you took to clean and tidy the data. Include R code.
 
-Are there differences in music preferences between left handed people and right handed people?
+Give a summary report of the clean dataset: how many rows and columns, variables and their data types, the first few rows of the tipple.
+
+## 2. Data Analysis 
+
+May describe data tranformation you carried out before any of your analysis, and include R code.
+
+
+### Question 1: Are there differences in music preferences between left handed people and right handed people?
+
+```{r}
+
+```
+
+Describe data transformation specific for this question, and include R code;
+
+Describe how you address this specific question, and include R code;
+
+Write your answer to the quetsion based on the analysis; may look at and cite addional sources to increase your understanding about the question.
+
+
+**Note: If the question contains multiple parts (small questions), you may lable them as 1a, 1b,etc. as follows:**
+
+
+#### 1a: XXX
+
+Describe data transformation specific for this question, and include R code;
+
+Describe how you address this specific question, and include R code;
+
+Write your answer to the quetsion based on the analysis; may look at and cite addional sources to increase your understanding about the question.
+
+
+#### 1b: XXX
+
+...
+
+
+### Question 2: Are there any connections between music and movie preferences?
 
 ```{r}
 
 ```
 
-##Question 2
 
-Are there any connections between music and movie preferences?
 
-```{r}
+## 3. Summary
 
-```
+Reflect on the exploratory analysis: 
 
-```{r}
+(i)	summarize key facts learned from this analysis and discuss what you find most interesting;
+(ii) may briefly discuss limitations of the analysis;
+(iii)	may briefly discuss what additional data and analysis could be useful;
+(iv) may discuss any other thought you have.
 
-```
+
+## References
+
+List sources or articles you cited, if there are any.
+
+
