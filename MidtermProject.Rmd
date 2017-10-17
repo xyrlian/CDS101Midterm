@@ -75,6 +75,21 @@ filter(youthdata2, MusicGenreScore == 5) %>%
 ```
 
 For this graph, we wanted to filter all the music scores (how high people rated the music) to 5. This is the highest score, so we assume that the people who scored a genre with a 5 consider that their favorite genre.
+<<<<<<< HEAD
+=======
+
+After filtering the score, we wanted to see if there was a relationship between dominate hand and favorite music. To view this more neatly, we put the dominate hand variable on the x axis and the number of people in the survey on the y axis. Next, we organized the the music genre by color so we could see the split between how many left-handers liked a certain genre of music vs. how many right-handers liked a certain genre of music.
+
+According to the graph, a larger number of left-handers preferred Pop over right-handers, but a larger number of right-handers preferred Rock over left-handers. Overall, there is not much of a discrepensy between dominate hand and preferred music. People of all types of hands like all the same types of music.
+
+
+**Note: If the question contains multiple parts (small questions), you may lable them as 1a, 1b,etc. as follows:**
+
+
+#### 1a: XXX
+
+Describe data transformation specific for this question, and include R code;
+>>>>>>> b61256a152cb686d8c4e9a5c776c96c876fb4d0a
 
 After filtering the score, we wanted to see if there was a relationship between dominate hand and favorite music. To view this more neatly, we put the dominate hand variable on the x axis and the number of people in the survey on the y axis. Next, we organized the the music genre by color so we could see the split between how many left-handers liked a certain genre of music vs. how many right-handers liked a certain genre of music.
 
