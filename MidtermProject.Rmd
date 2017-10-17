@@ -1,6 +1,6 @@
 ---
 title: "An Explorotory Analysis of Young People"
-author: "xxx"
+author: "Ryan Pugh. Aspen Bass, Zongzhe Lin, Joseph Saah"
 date: "October 17, 2017"
 output: word_document
 ---
@@ -35,13 +35,10 @@ The variables can be split into the following groups:
 *Spending habits (7 items)
 *Demographics (10 items)
 
-Write about the general purpose of this analysis, and list the questions you intend to address. For example:
-
-This analysis is designed to show .... More specifically, the data analysis will answer the following questions:
+The groups relevant to our analysis are Music preferences, Movie preferences, and Demographics. This analysis is designed to show the relationship between media preferences and hand dominance, and if there are any correlations in the preferences for different media types. More specifically, the data analysis will answer the following questions:
 
 1.  Are there differences in music preferences between left handed people and right handed people?
-2.  XXX
-3.  XXX
+2.  Are there any connections between music and movie preferences?
 
 ...
 
@@ -56,9 +53,10 @@ youthdata2<-select(youthdata2, MusicScore=Music, MusicGenre, MusicGenreScore, Mo
 youthdata2
 ```
 
-Describe how you imported the data to tidyverse, what problems you found with the data, what steps you took to clean and tidy the data. Include R code.
+We downloaded the data CSV and imported it into a table. The dataset had a lot of irrelevant variables to our analysis, so first we selected the relevant groups. To tidy the data, we took all the genre obserevations for Music and Movies and gathered them into the MusicGenre and MovieGenre variables respectively, with each having their values being outputted to a GenreScore. Lastly, we renamed some variables to make them more code friendly.
 
-Give a summary report of the clean dataset: how many rows and columns, variables and their data types, the first few rows of the tipple.
+In are tidy dataset there are 188870 rows, and 11 columns. 7 are numerical, 4 are categorical.
+
 
 ## 2. Data Analysis 
 
