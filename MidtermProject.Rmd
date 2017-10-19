@@ -39,7 +39,7 @@ The variables can be split into the following groups:
 The groups relevant to our analysis are Music preferences, Movie preferences, and Demographics. This analysis is designed to show the relationship between media preferences and hand dominance, and if there are any correlations in the preferences for different media types. More specifically, the data analysis will answer the following questions:
 
 1.  Are there differences in music preferences between left handed people and right handed people?
-2.  Are there any connections between music and movie preferences?
+2.  Are there any difference in movie preference between men and women?
 
 ...
 
