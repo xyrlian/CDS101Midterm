@@ -138,12 +138,11 @@ It was also interesting that genre proportions for gender seem to reflect some o
 *(ii) Analysis Limitations*
 
 The survey was a convenience sample liable to voluntary response bias, though it is of large size.
-Genres of Music do not line up to particular genres of Movies.
 A rating from 1 to 5 doesn't give a very good spread.
 
 *(iii)	Future Analysis*
 
 It would be useful to analyze if Movie Score and Music Score have any correlation.
+Analysis could be done to find associations between movie genre preference and music genre preference.
 
-*(iv) Other Thoughts*
 
